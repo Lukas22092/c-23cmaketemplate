@@ -1,6 +1,7 @@
-module;
-#include <iostream>
 export module Hello;
+import std;
+
+
 export void hello() {
   std::cout << "Hello World!\n";
 }

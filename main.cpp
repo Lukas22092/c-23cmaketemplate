@@ -1,7 +1,6 @@
+import std;
 import Hello;
-
-
-
-int main() { 
-
-    hello(); }
+auto main() -> int
+{
+    std::print("Hello World");
+}
