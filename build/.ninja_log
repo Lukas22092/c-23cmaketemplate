@@ -1,0 +1,11 @@
+# ninja log v7
+1	48	1778185864853432058	CMakeFiles/main.dir/main.cpp.o.ddi	6098a4cecc94ac53
+2	82	1778185864853857266	CMakeFiles/main.dir/my_module.cppm.o.ddi	660f2f4570be1d18
+82	92	1778185864943256957	CMakeFiles/main.dir/CXX.dd	3e8f3e6a1b1b5c0a
+82	92	1778185864943256957	CMakeFiles/main.dir/CXXModules.json	3e8f3e6a1b1b5c0a
+82	92	1778185864943256957	CMakeFiles/main.dir/main.cpp.o.modmap	3e8f3e6a1b1b5c0a
+82	92	1778185864943256957	CMakeFiles/main.dir/my_module.cppm.o.modmap	3e8f3e6a1b1b5c0a
+92	433	1778185865280444860	CMakeFiles/main.dir/my_module.cppm.o	e1fb2f9bce5d32b9
+92	433	1778185865280444860	CMakeFiles/main.dir/Hello.pcm	e1fb2f9bce5d32b9
+434	467	1778185865286368075	CMakeFiles/main.dir/main.cpp.o	be017cb5713febef
+467	536	1778185865319271989	main	93313262d0b21690

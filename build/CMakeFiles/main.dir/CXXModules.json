@@ -1,0 +1,19 @@
+{
+	"modules" : 
+	{
+		"Hello" : 
+		{
+			"bmi" : "/Users/lukas/Desktop/idkkk/build/CMakeFiles/main.dir/Hello.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"Hello" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/main.dir/Hello.pcm"
+		}
+	},
+	"usages" : {}
+}

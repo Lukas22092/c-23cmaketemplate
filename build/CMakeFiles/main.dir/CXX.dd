@@ -1,0 +1,6 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/main.dir/main.cpp.o: dyndep | CMakeFiles/main.dir/Hello.pcm
+
+build CMakeFiles/main.dir/my_module.cppm.o | CMakeFiles/main.dir/Hello.pcm: dyndep
+  restat = 1
+

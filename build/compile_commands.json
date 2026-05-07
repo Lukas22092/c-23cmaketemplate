@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/lukas/Desktop/idkkk/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -std=gnu++23 -arch arm64 @CMakeFiles/main.dir/main.cpp.o.modmap -o CMakeFiles/main.dir/main.cpp.o -c /Users/lukas/Desktop/idkkk/main.cpp",
+  "file": "/Users/lukas/Desktop/idkkk/main.cpp",
+  "output": "/Users/lukas/Desktop/idkkk/build/CMakeFiles/main.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/lukas/Desktop/idkkk/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -std=gnu++23 -arch arm64 @CMakeFiles/main.dir/my_module.cppm.o.modmap -o CMakeFiles/main.dir/my_module.cppm.o -c /Users/lukas/Desktop/idkkk/my_module.cppm",
+  "file": "/Users/lukas/Desktop/idkkk/my_module.cppm",
+  "output": "/Users/lukas/Desktop/idkkk/build/CMakeFiles/main.dir/my_module.cppm.o"
+}
+]
