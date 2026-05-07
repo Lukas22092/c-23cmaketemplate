@@ -1,14 +1,26 @@
 [
 {
   "directory": "/Users/lukas/Desktop/idkkk/build",
-  "command": "/opt/homebrew/opt/llvm/bin/clang++ -std=gnu++23 -arch arm64 @CMakeFiles/main.dir/main.cpp.o.modmap -o CMakeFiles/main.dir/main.cpp.o -c /Users/lukas/Desktop/idkkk/main.cpp",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64 @CMakeFiles/main.dir/main.cpp.o.modmap -o CMakeFiles/main.dir/main.cpp.o -c /Users/lukas/Desktop/idkkk/main.cpp",
   "file": "/Users/lukas/Desktop/idkkk/main.cpp",
   "output": "/Users/lukas/Desktop/idkkk/build/CMakeFiles/main.dir/main.cpp.o"
 },
 {
   "directory": "/Users/lukas/Desktop/idkkk/build",
-  "command": "/opt/homebrew/opt/llvm/bin/clang++ -std=gnu++23 -arch arm64 @CMakeFiles/main.dir/my_module.cppm.o.modmap -o CMakeFiles/main.dir/my_module.cppm.o -c /Users/lukas/Desktop/idkkk/my_module.cppm",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64 @CMakeFiles/main.dir/my_module.cppm.o.modmap -o CMakeFiles/main.dir/my_module.cppm.o -c /Users/lukas/Desktop/idkkk/my_module.cppm",
   "file": "/Users/lukas/Desktop/idkkk/my_module.cppm",
   "output": "/Users/lukas/Desktop/idkkk/build/CMakeFiles/main.dir/my_module.cppm.o"
+},
+{
+  "directory": "/Users/lukas/Desktop/idkkk/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64 @CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.modmap -o CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o -c /opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm",
+  "file": "/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm",
+  "output": "/Users/lukas/Desktop/idkkk/build/CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o"
+},
+{
+  "directory": "/Users/lukas/Desktop/idkkk/build",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64 @CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.modmap -o CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o -c /opt/homebrew/opt/llvm/share/libc++/v1/std.cppm",
+  "file": "/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm",
+  "output": "/Users/lukas/Desktop/idkkk/build/CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o"
 }
 ]

@@ -30,7 +30,10 @@
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : [],
 	"language" : "CXX",
-	"linked-target-dirs" : [],
+	"linked-target-dirs" : 
+	[
+		"/Users/lukas/Desktop/idkkk/build/CMakeFiles/__cmake_cxx_std_23.dir"
+	],
 	"module-dir" : "/Users/lukas/Desktop/idkkk/build/CMakeFiles/main.dir",
 	"sources" : 
 	{

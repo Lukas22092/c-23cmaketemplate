@@ -13,7 +13,27 @@
 		{
 			"lookup-method" : "by-name",
 			"path" : "CMakeFiles/main.dir/Hello.pcm"
+		},
+		"std" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/__cmake_cxx_std_23.dir/std.pcm"
+		},
+		"std.compat" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/__cmake_cxx_std_23.dir/std.compat.pcm"
 		}
 	},
-	"usages" : {}
+	"usages" : 
+	{
+		"Hello" : 
+		[
+			"std"
+		],
+		"std.compat" : 
+		[
+			"std"
+		]
+	}
 }

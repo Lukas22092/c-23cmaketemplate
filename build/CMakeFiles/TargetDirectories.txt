@@ -1,3 +1,4 @@
 /Users/lukas/Desktop/idkkk/build/CMakeFiles/main.dir
 /Users/lukas/Desktop/idkkk/build/CMakeFiles/edit_cache.dir
 /Users/lukas/Desktop/idkkk/build/CMakeFiles/rebuild_cache.dir
+/Users/lukas/Desktop/idkkk/build/CMakeFiles/__cmake_cxx_std_23.dir

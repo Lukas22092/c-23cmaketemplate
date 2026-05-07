@@ -37,7 +37,7 @@ CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/opt/homebrew/Cellar/llvm/22.1.4/bin
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/opt/homebrew/Cellar/llvm/22.1.4/bin/llvm-ranlib
 
 //Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=
+CMAKE_CXX_FLAGS:STRING=-L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g

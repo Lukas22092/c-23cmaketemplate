@@ -42,19 +42,19 @@ cmake_ninja_workdir = /Users/lukas/Desktop/idkkk/build/
 #############################################
 # Order-only phony target for main
 
-build cmake_object_order_depends_target_main: phony || .
+build cmake_object_order_depends_target_main: phony || cmake_object_order_depends_target___cmake_cxx_std_23
 
 build CMakeFiles/main.dir/main.cpp.o.ddi: CXX_SCAN__main_ /Users/lukas/Desktop/idkkk/main.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/main.cpp.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles/main.dir/main.cpp.o.ddi
-  FLAGS = -std=gnu++23 -arch arm64
+  FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64
   OBJ_FILE = CMakeFiles/main.dir/main.cpp.o
   PREPROCESSED_OUTPUT_FILE = CMakeFiles/main.dir/main.cpp.o.ddi.i
 
 build CMakeFiles/main.dir/main.cpp.o: CXX_COMPILER__main_scanned_ /Users/lukas/Desktop/idkkk/main.cpp | CMakeFiles/main.dir/main.cpp.o.modmap || cmake_object_order_depends_target_main CMakeFiles/main.dir/CXX.dd
   DEP_FILE = CMakeFiles/main.dir/main.cpp.o.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles/main.dir/main.cpp.o.modmap
-  FLAGS = -std=gnu++23 -arch arm64
+  FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
   TARGET_COMPILE_PDB = CMakeFiles/main.dir/
@@ -65,14 +65,14 @@ build CMakeFiles/main.dir/main.cpp.o: CXX_COMPILER__main_scanned_ /Users/lukas/D
 build CMakeFiles/main.dir/my_module.cppm.o.ddi: CXX_SCAN__main_ /Users/lukas/Desktop/idkkk/my_module.cppm || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/my_module.cppm.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles/main.dir/my_module.cppm.o.ddi
-  FLAGS = -std=gnu++23 -arch arm64
+  FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64
   OBJ_FILE = CMakeFiles/main.dir/my_module.cppm.o
   PREPROCESSED_OUTPUT_FILE = CMakeFiles/main.dir/my_module.cppm.o.ddi.i
 
 build CMakeFiles/main.dir/my_module.cppm.o: CXX_COMPILER__main_scanned_ /Users/lukas/Desktop/idkkk/my_module.cppm | CMakeFiles/main.dir/my_module.cppm.o.modmap || cmake_object_order_depends_target_main CMakeFiles/main.dir/CXX.dd
   DEP_FILE = CMakeFiles/main.dir/my_module.cppm.o.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles/main.dir/my_module.cppm.o.modmap
-  FLAGS = -std=gnu++23 -arch arm64
+  FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
   TARGET_COMPILE_PDB = CMakeFiles/main.dir/
@@ -80,7 +80,7 @@ build CMakeFiles/main.dir/my_module.cppm.o: CXX_COMPILER__main_scanned_ /Users/l
   TARGET_SUPPORT_DIR = CMakeFiles/main.dir
   dyndep = CMakeFiles/main.dir/CXX.dd
 
-build CMakeFiles/main.dir/CXX.dd | CMakeFiles/main.dir/CXXModules.json CMakeFiles/main.dir/main.cpp.o.modmap CMakeFiles/main.dir/my_module.cppm.o.modmap: CXX_DYNDEP__main_ CMakeFiles/main.dir/main.cpp.o.ddi CMakeFiles/main.dir/my_module.cppm.o.ddi | /Users/lukas/Desktop/idkkk/build/CMakeFiles/main.dir/CXXDependInfo.json
+build CMakeFiles/main.dir/CXX.dd | CMakeFiles/main.dir/CXXModules.json CMakeFiles/main.dir/main.cpp.o.modmap CMakeFiles/main.dir/my_module.cppm.o.modmap: CXX_DYNDEP__main_ CMakeFiles/main.dir/main.cpp.o.ddi CMakeFiles/main.dir/my_module.cppm.o.ddi | /Users/lukas/Desktop/idkkk/build/CMakeFiles/main.dir/CXXDependInfo.json CMakeFiles/__cmake_cxx_std_23.dir/CXXModules.json
 
 
 # =============================================================================
@@ -90,9 +90,10 @@ build CMakeFiles/main.dir/CXX.dd | CMakeFiles/main.dir/CXXModules.json CMakeFile
 #############################################
 # Link the executable main
 
-build main: CXX_EXECUTABLE_LINKER__main_ CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/my_module.cppm.o
-  FLAGS = -arch arm64
+build main: CXX_EXECUTABLE_LINKER__main_ CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/my_module.cppm.o | lib__cmake_cxx_std_23.a || lib__cmake_cxx_std_23.a
+  FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -arch arm64
   LINK_FLAGS = -Wl,-search_paths_first -Wl,-headerpad_max_install_names
+  LINK_LIBRARIES = lib__cmake_cxx_std_23.a
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -126,7 +127,75 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target __cmake_cxx_std_23
+
+
+#############################################
+# Order-only phony target for __cmake_cxx_std_23
+
+build cmake_object_order_depends_target___cmake_cxx_std_23: phony || .
+
+build CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.ddi: CXX_SCAN____cmake_cxx_std_23_ /opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm || cmake_object_order_depends_target___cmake_cxx_std_23
+  DEP_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.ddi
+  FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64
+  OBJ_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.ddi.i
+
+build CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o: CXX_COMPILER____cmake_cxx_std_23_scanned_ /opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm | CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.modmap || cmake_object_order_depends_target___cmake_cxx_std_23 CMakeFiles/__cmake_cxx_std_23.dir/CXX.dd
+  DEP_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.modmap
+  FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64
+  OBJECT_DIR = CMakeFiles/__cmake_cxx_std_23.dir
+  OBJECT_FILE_DIR = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1
+  TARGET_COMPILE_PDB = CMakeFiles/__cmake_cxx_std_23.dir/__cmake_cxx_std_23.pdb
+  TARGET_PDB = lib__cmake_cxx_std_23.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles/__cmake_cxx_std_23.dir
+  dyndep = CMakeFiles/__cmake_cxx_std_23.dir/CXX.dd
+
+build CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.ddi: CXX_SCAN____cmake_cxx_std_23_ /opt/homebrew/opt/llvm/share/libc++/v1/std.cppm || cmake_object_order_depends_target___cmake_cxx_std_23
+  DEP_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.ddi
+  FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64
+  OBJ_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.ddi.i
+
+build CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o: CXX_COMPILER____cmake_cxx_std_23_scanned_ /opt/homebrew/opt/llvm/share/libc++/v1/std.cppm | CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.modmap || cmake_object_order_depends_target___cmake_cxx_std_23 CMakeFiles/__cmake_cxx_std_23.dir/CXX.dd
+  DEP_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.modmap
+  FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1 -std=gnu++23 -arch arm64
+  OBJECT_DIR = CMakeFiles/__cmake_cxx_std_23.dir
+  OBJECT_FILE_DIR = CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1
+  TARGET_COMPILE_PDB = CMakeFiles/__cmake_cxx_std_23.dir/__cmake_cxx_std_23.pdb
+  TARGET_PDB = lib__cmake_cxx_std_23.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles/__cmake_cxx_std_23.dir
+  dyndep = CMakeFiles/__cmake_cxx_std_23.dir/CXX.dd
+
+build CMakeFiles/__cmake_cxx_std_23.dir/CXX.dd | CMakeFiles/__cmake_cxx_std_23.dir/CXXModules.json CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.modmap CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.modmap: CXX_DYNDEP____cmake_cxx_std_23_ CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o.ddi CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o.ddi | /Users/lukas/Desktop/idkkk/build/CMakeFiles/__cmake_cxx_std_23.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target __cmake_cxx_std_23
+
+
+#############################################
+# Link the static library lib__cmake_cxx_std_23.a
+
+build lib__cmake_cxx_std_23.a: CXX_STATIC_LIBRARY_LINKER____cmake_cxx_std_23_ CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.compat.cppm.o CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/opt/llvm/share/libc++/v1/std.cppm.o
+  ARCH_FLAGS = -arch arm64
+  LANGUAGE_COMPILE_FLAGS = -L/opt/homebrew/opt/llvm/lib -Wl,-rpath,/opt/homebrew/opt/llvm/lib -I/opt/homebrew/opt/llvm/include/c++/v1
+  OBJECT_DIR = CMakeFiles/__cmake_cxx_std_23.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/__cmake_cxx_std_23.dir/__cmake_cxx_std_23.pdb
+  TARGET_FILE = lib__cmake_cxx_std_23.a
+  TARGET_PDB = lib__cmake_cxx_std_23.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles/__cmake_cxx_std_23.dir
+
+# =============================================================================
 # Target aliases.
+
+build __cmake_cxx_std_23: phony lib__cmake_cxx_std_23.a
 
 # =============================================================================
 # Folder targets.

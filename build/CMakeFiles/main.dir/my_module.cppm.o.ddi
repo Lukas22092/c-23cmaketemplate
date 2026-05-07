@@ -9,6 +9,11 @@
           "logical-name": "Hello",
           "source-path": "/Users/lukas/Desktop/idkkk/my_module.cppm"
         }
+      ],
+      "requires": [
+        {
+          "logical-name": "std"
+        }
       ]
     }
   ],

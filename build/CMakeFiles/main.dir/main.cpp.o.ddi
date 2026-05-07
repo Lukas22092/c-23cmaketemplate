@@ -5,6 +5,9 @@
       "primary-output": "CMakeFiles/main.dir/main.cpp.o",
       "requires": [
         {
+          "logical-name": "std"
+        },
+        {
           "logical-name": "Hello"
         }
       ]
